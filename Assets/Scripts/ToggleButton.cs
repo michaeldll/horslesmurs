@@ -7,7 +7,7 @@ public class ToggleButton : MonoBehaviour
 	public CanvasGroup button;
 	public bool autoFadeOut = false;
 	public float autoFadeOutTime = 5.0f;
-	public float startFadeTime = 2.0f;
+	public float startFadeTime = 1.0f;
 	void Start()
 	{
 		button.alpha = 0;
