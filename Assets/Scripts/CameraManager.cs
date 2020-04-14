@@ -9,6 +9,7 @@ public class CameraManager : MonoBehaviour
 	public Camera[] cams;
 	Transform currentTransform;
 	public GameObject hands;
+	public GameObject childHand;
 	public GameObject gyroscopeIcon;
 	public bool animationEnded = false;
 	private bool viewsHaveSwitched = false;
@@ -26,10 +27,17 @@ public class CameraManager : MonoBehaviour
 		{
 			viewsHaveSwitched = true;
 			currentTransform = transforms[1];
+
+			Invoke("DisableHand", 0.1f);
 			Invoke("EnableGyroscope", 4.6f);
 			Invoke("SetViewToCurrent", 5.4f);
 			Invoke("SwitchCameras", 6.8f);
 		}
+	}
+
+	void DisableHand()
+	{
+		childHand.SetActive(false);
 	}
 
 	void EnableGyroscope()

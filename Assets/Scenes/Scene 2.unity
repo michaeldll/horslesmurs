@@ -1009,6 +1009,12 @@ Transform:
   m_Father: {fileID: 5006512735234224395}
   m_RootOrder: 136
   m_LocalEulerAnglesHint: {x: -270, y: -180, z: -0.000015258789}
+--- !u!1 &845090320 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -6556275955898909471, guid: 7b916db019ebd4f31b0a8d11a6a75bd6,
+    type: 3}
+  m_PrefabInstance: {fileID: 1663576385}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1009056430
 GameObject:
   m_ObjectHideFlags: 0
@@ -2098,6 +2104,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -6556275955898909471, guid: 7b916db019ebd4f31b0a8d11a6a75bd6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 7b916db019ebd4f31b0a8d11a6a75bd6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2208,6 +2219,7 @@ MonoBehaviour:
   - {fileID: 1742618604}
   - {fileID: 1799021514}
   hands: {fileID: 62039064}
+  childHand: {fileID: 845090320}
   gyroscopeIcon: {fileID: 1461746010}
   animationEnded: 0
 --- !u!20 &1742618604
